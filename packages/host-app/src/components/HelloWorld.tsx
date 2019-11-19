@@ -10,37 +10,7 @@ export const HelloWorld: React.FC<HelloWorldProps> = (
 ) => (
     <h1>
         Hi there from React! Welcome {props.firstName} and {props.lastName}!
-        {[
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            0,
-            9,
-            7,
-            6,
-            4,
-            3,
-            6,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            8,
-            6,
-            5,
-            4,
-            3,
-            3,
-        ].map(i => (
+        {[1, 2, 3, 8, 6, 5, 4, 3, 3].map(i => (
             <div key={i}>{i}</div>
         ))}
     </h1>
