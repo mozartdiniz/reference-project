@@ -1,14 +1,18 @@
 {
-    "compilerOptions": {
-        "jsx": "react",
-        "module": "commonjs",
-        "noImplicitAny": true,
-        "outDir": "./dist/",
-        "preserveConstEnums": true,
-        "removeComments": true,
-        "resolveJsonModule": true,
-        "sourceMap": true,
-        "target": "es5"
-    },
-    "include": ["./src/**/**/*"]
+  "compilerOptions": {
+    "jsx": "react",
+    "module": "commonjs",
+    "noImplicitAny": true,
+    "outDir": "./dist/",
+    "preserveConstEnums": true,
+    "removeComments": true,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "target": "es5"
+  },
+  "references": [
+    { "path": "packages/host-app" },
+    { "path": "packages/micro-app" },
+    { "path": "packages/ui-kit" }
+  ]
 }
