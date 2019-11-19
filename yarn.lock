@@ -882,7 +882,7 @@
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.3.tgz#2ab0d5da2e5815f94b0b9d4b95d1e5f243ab2ca7"
   integrity sha512-KfRL3PuHmqQLOG+2tGpRO26Ctg+Cq1E01D2DMriKEATHgWLfeNDmq9e29Q9WIky0dQ3NPkd1mzYH8Lm936Z9qw==
 
-"@types/react-dom@^16.9.4":
+"@types/react-dom@*", "@types/react-dom@^16.9.4":
   version "16.9.4"
   resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-16.9.4.tgz#0b58df09a60961dcb77f62d4f1832427513420df"
   integrity sha512-fya9xteU/n90tda0s+FtN5Ym4tbgxpq/hb/Af24dvs6uYnYn+fspaxw5USlw0R8apDNwxsqumdRoCoKitckQqw==
@@ -913,6 +913,14 @@
   dependencies:
     "@types/prop-types" "*"
     csstype "^2.2.0"
+
+"@types/single-spa-react@^2.8.3":
+  version "2.8.3"
+  resolved "https://registry.yarnpkg.com/@types/single-spa-react/-/single-spa-react-2.8.3.tgz#d87e4c7288e4b45bbd30d45c0e18934dd50817b0"
+  integrity sha512-2F2xc0HUzuWAtsrJR3E3vy9dDDQObDv6YqBynPpIz85m5RY6+I4lr3pv93k0uv0nMK2NtHp/cspou4Pj0lEaaQ==
+  dependencies:
+    "@types/react" "*"
+    "@types/react-dom" "*"
 
 "@typescript-eslint/eslint-plugin@^2.8.0":
   version "2.8.0"
@@ -6733,6 +6741,16 @@ signal-exit@^3.0.0, signal-exit@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.2.tgz#b5fdc08f1287ea1178628e415e25132b73646c6d"
   integrity sha1-tf3AjxKH6hF4Yo5BXiUTK3NkbG0=
+
+single-spa-react@^2.10.4:
+  version "2.10.4"
+  resolved "https://registry.yarnpkg.com/single-spa-react/-/single-spa-react-2.10.4.tgz#164af9ebe02a7df50cb3a040b50e821dd7b0d052"
+  integrity sha512-PN5Un1gX2f4gsZKpu/bx+3RPix1lHYGDvSXD6wf4td6SB2ESuv4RFkiLMeBrW4VtcW+pUWDxjbKrqZb1lm6IiQ==
+
+single-spa@^4.4.1:
+  version "4.4.1"
+  resolved "https://registry.yarnpkg.com/single-spa/-/single-spa-4.4.1.tgz#660a0e5f93f7e7d06fc40e2b126b81102f0741af"
+  integrity sha512-em6ZGRbLUilaiPrR+XKHT4/qjX07ijbO75PLtN6/d3DykDVioqK8bE1W+KTOJpRf0vDoq3lV+oP9TVz/fvP/YA==
 
 slash@^1.0.0:
   version "1.0.0"
