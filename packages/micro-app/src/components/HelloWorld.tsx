@@ -6,7 +6,7 @@ export interface HelloWorldProps {
 }
 
 export const HelloWorld: React.SFC<HelloWorldProps> = (
-    props: HelloWorldProps,
+    props: HelloWorldProps
 ) => (
     <h1>
         Hi there from React! Welcome {props.firstName} and {props.lastName}!
@@ -39,7 +39,7 @@ export const HelloWorld: React.SFC<HelloWorldProps> = (
             5,
             4,
             3,
-            3,
+            3
         ].map(i => (
             <div key={i}>{i}</div>
         ))}

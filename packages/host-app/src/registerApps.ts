@@ -1,7 +1,6 @@
 import { registerApplication } from 'single-spa';
 
-function prefix(location: Location, ...prefixes: string[]) {
-    console.log(location);
+function prefix(location: Location, ...prefixes: string[]): boolean {
     return prefixes.some(
         prefix => location.href.indexOf(`${location.origin}/${prefix}`) !== -1,
     );

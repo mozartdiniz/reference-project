@@ -4,8 +4,10 @@
     "description": "To be loaded by the host app",
     "main": "index.js",
     "scripts": {
-        "dev": "webpack-dev-server --open",
-        "build": "webpack --mode production",
+        "dev": "webpack-dev-server --open --config ./webpack.dev.config.js",
+        "build:microapp": "webpack --config ./webpack.microapp.config.js",
+        "build:standalone": "webpack --config ./webpack.standalone.config.js",
+        "build": "npm run build:microapp && npm run build:standalone",
         "lint": "eslint './src/**/*.{ts,tsx}' --fix",
         "prettier": "prettier --check 'src/**/*.ts' 'src/**/*.tsx' --write"
     },

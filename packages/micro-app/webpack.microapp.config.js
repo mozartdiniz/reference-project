@@ -1,18 +1,13 @@
-const HtmlWebPackPlugin = require('html-webpack-plugin');
+/* eslint-disable @typescript-eslint/no-var-requires */
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
-    mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
-    devtool: 'inline-source-map',
-    entry: './src/index.tsx',
+    mode: 'production',
+    entry: './src/microapp_index.ts',
     output: {
         path: __dirname + '/dist',
-        filename: 'bundle.js'
-    },
-    devServer: {
-        inline: true,
-        contentBase: './dist',
-        port: 3000
+        filename: 'micro-app.js',
+        libraryTarget: 'system'
     },
     resolve: {
         extensions: ['.ts', '.tsx', '.js']
@@ -26,12 +21,5 @@ module.exports = {
     },
     optimization: {
         minimizer: [new UglifyJsPlugin()]
-    },
-    plugins: [
-        new HtmlWebPackPlugin({
-            template: './templates/index.html',
-            title: 'TS Project',
-            filename: 'index.html'
-        })
-    ]
+    }
 };
