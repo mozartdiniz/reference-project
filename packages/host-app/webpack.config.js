@@ -20,6 +20,7 @@ module.exports = {
     },
     module: {
         rules: [
+            { parser: { system: false } },
             { test: /\.tsx?$/, exclude: /node_modules/, loader: 'ts-loader' },
             { test: /\.js$/, use: ['source-map-loader'], enforce: 'pre' },
             { test: /\.css$/, use: ['style-loader', 'css-loader'] }
