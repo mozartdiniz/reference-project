@@ -22,13 +22,5 @@
             "version": "detect"
         }
     },
-    "overrides": [
-        {
-            "files": ["*.js"],
-            "rules": {
-                "typescript/no-var-requires": "off"
-            }
-        }
-    ],
     "parser": "@typescript-eslint/parser"
 }
