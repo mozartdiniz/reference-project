@@ -3,13 +3,8 @@ import * as React from 'react';
 import { Button } from './Button';
 import { withKnobs, text } from '@storybook/addon-knobs';
 
-const stories = storiesOf('Storybook Knobs', module);
+const stories = storiesOf('Button', module);
 stories.addDecorator(withKnobs);
-
-export default {
-    title: 'Storybook Knobs',
-    decorators: [withKnobs]
-};
 
 const action = (): void => {
     console.log('Button action');
