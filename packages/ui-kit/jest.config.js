@@ -5,7 +5,7 @@ module.exports = {
     },
     testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$',
     moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
-    testEnvironment: 'node',
+    testEnvironment: 'jsdom',
 
     // Setup Enzyme
     snapshotSerializers: ['enzyme-to-json/serializer'],

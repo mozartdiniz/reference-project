@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+import { ButtonStyled } from './Button.style';
 
 interface ButtonProps {
     label: string;
@@ -6,5 +7,5 @@ interface ButtonProps {
 }
 
 export const Button: FC<ButtonProps> = ({ label, action }) => (
-    <button onClick={action}>{label}</button>
+    <ButtonStyled onClick={action}>{label}</ButtonStyled>
 );

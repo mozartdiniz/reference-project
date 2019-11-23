@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1574489546151" clover="3.2.0">
-  <project timestamp="1574489546151" name="All files">
-    <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1" elements="3" coveredelements="3" complexity="0" loc="2" ncloc="2" packages="1" files="1" classes="1"/>
-    <file name="Button.tsx" path="/Users/mozartdiniz/Documents/reference-project/packages/ui-kit/src/components/Button/Button.tsx">
-      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+<coverage generated="1574490601011" clover="3.2.0">
+  <project timestamp="1574490601011" name="All files">
+    <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1" elements="8" coveredelements="8" complexity="0" loc="5" ncloc="5" packages="1" files="2" classes="2"/>
+    <file name="Button.style.ts" path="/Users/mozartdiniz/Documents/reference-project/packages/ui-kit/src/components/Button/Button.style.ts">
+      <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="0" coveredmethods="0"/>
       <line num="1" count="1" type="stmt"/>
-      <line num="8" count="1" type="stmt"/>
+      <line num="3" count="1" type="cond" truecount="2" falsecount="0"/>
+    </file>
+    <file name="Button.tsx" path="/Users/mozartdiniz/Documents/reference-project/packages/ui-kit/src/components/Button/Button.tsx">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="9" count="2" type="stmt"/>
     </file>
   </project>
 </coverage>
