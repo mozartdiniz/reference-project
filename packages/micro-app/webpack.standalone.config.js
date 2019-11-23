@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const HtmlWebPackPlugin = require('html-webpack-plugin');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
     mode: 'production',
@@ -21,7 +21,17 @@ module.exports = {
         ]
     },
     optimization: {
-        minimizer: [new UglifyJsPlugin()]
+        minimizer: [
+            new TerserPlugin({
+                parallel: true,
+                sourceMap: true,
+                terserOptions: {
+                    output: {
+                        comments: false
+                    }
+                }
+            })
+        ]
     },
     plugins: [
         new HtmlWebPackPlugin({

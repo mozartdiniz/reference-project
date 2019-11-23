@@ -4,7 +4,6 @@
   "description": "It is a project to put many different pieces of knowledge together",
   "author": "Mozart Diniz <mozart.diniz@gmail.com>",
   "license": "Apache-2.0",
-  "main": "index.js",
   "private": true,
   "workspaces": [
     "packages/*"
