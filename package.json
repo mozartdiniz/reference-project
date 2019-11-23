@@ -16,5 +16,9 @@
     "prettier": "lerna run prettier",
     "cleanup": "lerna clean --yes && rm -rf ./node_modules"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@types/styled-components": "^4.4.0",
+    "styled-components": "^4.4.1",
+    "jest-styled-components": "^6.3.4"
+  }
 }
